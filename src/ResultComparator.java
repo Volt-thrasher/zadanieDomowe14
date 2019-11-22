@@ -9,6 +9,6 @@ public class ResultComparator implements Comparator<Sportsman> {
        } else if (s2.getResult()>s1.getResult()){
            return -1;
        }
-       return 0;
+       return s1.getLastName().compareTo(s2.getLastName());
     }
 }
